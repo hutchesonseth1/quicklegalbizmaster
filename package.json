@@ -1,0 +1,22 @@
+{
+  "name": "quick-stack-drizzle",
+  "private": true,
+  "packageManager": "pnpm@9.11.0",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "format": "prettier -w .",
+    "gen": "plop",
+    "sync:stripe": "tsx packages/billing/scripts/sync-products.ts"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "turbo": "^2.1.3",
+    "typescript": "^5.5.4",
+    "eslint": "^9.9.0",
+    "plop": "^4.0.1",
+    "hygen": "^6.2.11",
+    "tsx": "^4.16.2"
+  }
+}
